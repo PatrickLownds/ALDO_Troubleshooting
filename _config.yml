@@ -1,6 +1,9 @@
 # Set a clean, professional theme for your page
 theme: jekyll-theme-cayman
 
+# This tells the header banner to leave the subtitle completely blank
+description: ""
+
 # Enable relative links so your document structure works perfectly on the web
 plugins:
   - jekyll-relative-links
