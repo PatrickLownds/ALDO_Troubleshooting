@@ -1,0 +1,10 @@
+# Set a clean, professional theme for your page
+theme: jekyll-theme-cayman
+
+# Enable relative links so your document structure works perfectly on the web
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
