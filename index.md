@@ -4,6 +4,8 @@ title: "Azure Local Disconnected Operations: Diagnostics & Troubleshooting Guide
 description: ""
 ---
 
+* Learn how to fix [Certificate Generation Timeouts in ALDO Build 2605](TroubleshootingCertificateGenerationALDOBuild2605)
+
 Here is the structured breakdown of all the commands and script paths extracted from a recent troubleshooting session for Azure Local Disconnected Operations (ALDO). These commands were used to **identify the cluster identity**, **import the specialised disconnected operations modules**, **verify local REST API system readiness**, **audit security certificates**, **track kernel packet drops**, **trigger localised appliance log collection**, stage them, ship them to Microsoft via a device code login, and investigate a specific BitLocker volume key protector failure.
 
 **Operational Note:** Keeping this record as a point-in-time reference is highly valuable, especially given the level of technical detail captured during live engineering sessions. **At the same time, it is equally important to stay continuously aligned with the latest public documentation for any updates. The official framework evolves rapidly, and referencing the live documents ensures any subtle architectural changes or updated prerequisites are not overlooked.**
