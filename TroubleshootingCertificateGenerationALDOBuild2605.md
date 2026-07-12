@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Troubleshooting lengthy Certificate Generation in ALDO Build 2605"
+---
+
 **⚠️ Troubleshooting Certificate Generation in ALDO Build 2605**
 
 **The Issue**
