@@ -1,6 +1,6 @@
 # Azure Local Disconnected Operations (ALDO) Troubleshooting Portal
 
-<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpatricklownds.github.io%2FALDO_Troubleshooting%2F&title=Page+Views" />
+![Page Views](https://hits.dwyl.com/PatrickLownds/ALDO_Troubleshooting.svg)
 
 Welcome to the diagnostics and troubleshooting repository for Azure Local Disconnected Operations. This project contains point-in-time reference guides, commands, and scripts compiled during engineering sessions.
 
