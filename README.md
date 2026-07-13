@@ -6,8 +6,7 @@ Welcome to the diagnostics and troubleshooting repository for Azure Local Discon
 
 ## Available Documentation
 
-* [**ALDO Diagnostics & Troubleshooting Guide**](index) — Full technical breakdown of environment discovery, manifest inspection, log collections, Microsoft PG engineering checks, and kernel network packet tracing.
-* [**Certificate Generation Delays in ALDO Build 2605**](TroubleshootingCertificateGenerationALDOBuild2605) — Specific walkthrough for fixing infrastructure certificate generation blocks.
-
+* [**ALDO Diagnostics & Troubleshooting Guide**](https://patricklownds.github.io/ALDO_Troubleshooting/) — Full technical breakdown of environment discovery, manifest inspection, log collections, Microsoft PG engineering checks, and kernel network packet tracing.
+* [**Certificate Generation Delays in ALDO Build 2605**](https://patricklownds.github.io/ALDO_Troubleshooting/TroubleshootingCertificateGenerationALDOBuild2605) — Specific walkthrough for fixing infrastructure certificate generation blocks.
 ---
 *Maintained by [PatrickLownds](https://github.com/PatrickLownds).*
