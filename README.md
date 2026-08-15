@@ -10,4 +10,4 @@ Welcome to the diagnostics and troubleshooting repository for Azure Local Discon
 * [**Certificate Generation Delays in ALDO Build 2605**](./TroubleshootingCertificateGenerationALDOBuild2605.md) — Specific walkthrough for fixing infrastructure certificate generation blocks.
 ---
 
-*Maintained by [PatrickLownds](https://github.com/PatrickLownds).*
+*Maintained by [Patrick Lownds](https://github.com/PatrickLownds) • [Contact via Email](mailto:patrick.lownds@hpe.com)*
