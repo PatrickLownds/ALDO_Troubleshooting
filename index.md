@@ -140,4 +140,4 @@ pktmon filter remove
 
 ### Additional Resources
 * Learn how to fix [Certificate Generation Delays in ALDO Build 2605](TroubleshootingCertificateGenerationALDOBuild2605)
-* Read about [Managing Secret and Certificate Rotation in Azure Local Disconnected Operations](https://github.com/PatrickLownds/ALDO_Troubleshooting/blob/main/articles/CertificateRotation/Managing%20Secret%20and%20Certificate%20Rotation%20in%20Azure%20Local%20Disconnected%20Operations.md)
+* Read about [Managing Secret and Certificate Rotation in Azure Local Disconnected Operations](/articles/CertificateRotation/Managing%20Secret%20and%20Certificate%20Rotation%20in%20Azure%20Local%20Disconnected%20Operations)
