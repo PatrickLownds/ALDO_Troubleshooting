@@ -1,13 +1,19 @@
-# Set a clean, professional theme for your page
+# Theme setting
 theme: jekyll-theme-cayman
 
-# This tells the header banner to leave the subtitle completely blank
+# Header subtitle setting
 description: ""
 
-# Enable relative links so your document structure works perfectly on the web
+# GitHub Pages subpath configuration
+url: "https://PatrickLownds.github.io"
+baseurl: "/ALDO_Troubleshooting"
+
+# Plugins
 plugins:
   - jekyll-relative-links
 
+# Configure relative links plugin to rewrite .md to clean web URLs
 relative_links:
   enabled: true
   collections: true
+  collections_and_folders: true
