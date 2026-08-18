@@ -139,6 +139,6 @@ pktmon filter remove
 **Purpose:** Captures diagnostic packet traces directly inside the Windows networking stack components (such as the virtual switch layer). By applying filters for specific identity traffic (DNS port 53 / LDAP port 389) and utilising the --drop-only modifier, the tool filters out successful network noise and _only logs the exact packets that the operating system dropped_, instantly highlighting if an internal firewall rule or virtual switch configuration mismatch is killing your identity authentications.
 
 ### Additional Resources
-* Learn how to fix [Certificate Generation Delays in ALDO Build 2605](TroubleshootingCertificateGenerationALDOBuild2605)
-* Read about [Managing Secret and Certificate Rotation in Azure Local Disconnected Operations](Managing%20Secret%20and%20Certificate%20Rotation/)
+* Learn how to fix [Certificate Generation Delays in ALDO Build 2605](TroubleshootingCertificateGenerationALDOBuild2605.md)
+* Read about [Managing Secret and Certificate Rotation in Azure Local Disconnected Operations](Managing%20Secret%20and%20Certificate%20Rotation.md)
 
