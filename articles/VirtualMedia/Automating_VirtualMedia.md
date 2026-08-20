@@ -15,5 +15,6 @@ The automated process creates a temporary fixed virtual hard disk, formats it wi
 3. **Payload Injection:** Automatically detects staged files in the source folder and copies them onto the mounted VHD volume.
 4. **Image Finalisation:** Unmounts and detaches the virtual disk cleanly using diskpart, then converts the file extension to .img for immediate use with HPE iLO Virtual Media.
 
+
 ![HPE iLO 5 Virtual Floppy Mounting](/articles/VirtualMedia/iLO5%20Virtual%20Floppy.jpg) 
 
