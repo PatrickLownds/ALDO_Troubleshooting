@@ -14,6 +14,7 @@ Welcome to the diagnostics and troubleshooting repository for Azure Local Discon
 
 * [**ALDO_Get-ExpiringCerts.ps1**](./articles/CertificateRotation/ALDO_Get-ExpiringCerts.ps1) — Automated PowerShell monitoring script using PSPKI auto-discovery to query AD CS and export expiring certificates to CSV.
 * [**ALDO_Get-ActiveCerts.ps1**](./articles/CertificateRotation/ALDO_Get-ActiveCerts.ps1) — Interactive utility script with automated module dependencies for live AD CS certificate inspection.
+* [**Mount-HPEVirtualMedia.ps1**](./Scripts/Mount-HPEVirtualMedia.ps1) — Interactive utility script using native Windows tools to build FAT16 `.img` payloads for out-of-band iLO virtual media injection.
 ---
 
 *Maintained by [Patrick Lownds](https://github.com/PatrickLownds) • [Contact via Email](mailto:patrick.lownds@hpe.com)*
