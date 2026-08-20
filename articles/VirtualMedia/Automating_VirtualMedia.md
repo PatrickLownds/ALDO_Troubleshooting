@@ -17,5 +17,5 @@ The automated process creates a temporary fixed virtual hard disk, formats it wi
 
 * [**HPE iLO 5 Virtual Floppy Mounting**](/articles/VirtualMedia/iLO5%20Virtual%20Floppy.jpg) — Mounting `.img` payloads for out-of-band iLO virtual media injection.
 
-![HPE iLO 5 Virtual Floppy Mounting](/articles/VirtualMedia/iLO5%20Virtual%20Floppy.jpg)
+![HPE iLO 5 Virtual Floppy Mounting](/articles/VirtualMedia/iLO5%20Virtual%20Floppy.jpg) — Mounting `.img` payloads for out-of-band iLO virtual media injection.
 *Mounting `.img` payloads for out-of-band iLO virtual media injection.*
