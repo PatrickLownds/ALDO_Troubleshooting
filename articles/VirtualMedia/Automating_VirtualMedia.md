@@ -14,3 +14,5 @@ The automated process creates a temporary fixed virtual hard disk, formats it wi
 2. **VHD Provisioning via DiskPart:** Generates a temporary fixed VHD, initialises an MBR partition table, and formats the volume as FAT16 to guarantee compatibility across legacy and out-of-band virtual media controllers.
 3. **Payload Injection:** Automatically detects staged files in the source folder and copies them onto the mounted VHD volume.
 4. **Image Finalisation:** Unmounts and detaches the virtual disk cleanly using diskpart, then converts the file extension to .img for immediate use with HPE iLO Virtual Media.
+
+* [**Mount-HPEVirtualMedia.ps1**](./Scripts/Mount-HPEVirtualMedia.ps1) — Mounting .img payloads for out-of-band iLO virtual media injection.
