@@ -9,6 +9,7 @@ Welcome to the diagnostics and troubleshooting repository for Azure Local Discon
 * [**ALDO Diagnostics & Troubleshooting Guide**](./index.md) — Full technical breakdown of environment discovery, manifest inspection, log collections, Microsoft PG engineering checks, and kernel network packet tracing.
 * [**Certificate Generation Delays in ALDO Build 2605**](./TroubleshootingCertificateGenerationALDOBuild2605.md) — Specific walkthrough for fixing infrastructure certificate generation blocks.
 * [**Managing Secret and Certificate Rotation in Azure Local Disconnected Operations**](./articles/CertificateRotation/Managing-Secret-and-Certificate-Rotation.md) — Comprehensive guide covering lifecycle rotation triggers (post-deployment, scheduled renewals, compliance audits, and emergency compromise) along with operational procedures.
+* [**Automating Air-Gapped Script Delivery via HPE iLO Virtual Media**](./articles/VirtualMedia/Automating_VirtualMedia.md) — Guide and PowerShell automation script for packaging FAT16 `.img` payloads for out-of-band virtual media deployment on Gen11 nodes.
 
 ## Automation & Utility Scripts
 
