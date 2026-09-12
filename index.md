@@ -30,6 +30,8 @@ Invoke-RestMethod -Uri "<https://localhost:8081/api/v1/systemreadiness>" -Method
 
 **Purpose:** Hits the local offline orchestration agent's API gateway directly. It evaluates full-stack system readiness metrics (such as active provisioning phases, environment dependencies, and validation states). The -SkipCertificateCheck switch is mandatory here because, during an identity or deployment failure, local self-signed internal API communication tokens might not have a trusted root anchor established yet.
 
+![Invoke Readiness Test Output](https://raw.githubusercontent.com/PatrickLownds/ALDO_Troubleshooting/main/Invoke.png)
+
 ## Module Importation & Validation
 
 Because this is a disconnected environment, the native Azure Arc automated control plane tracking is unavailable. The engineering team manually loaded local fallback and operations modules to unlock diagnostic capabilities.
