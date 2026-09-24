@@ -143,4 +143,5 @@ pktmon filter remove
 ### Additional Resources
 * Learn how to fix [Certificate Generation Delays in ALDO Build 2605](TroubleshootingCertificateGenerationALDOBuild2605.md)
 * Read about [Managing Secret and Certificate Rotation in Azure Local Disconnected Operations](/articles/CertificateRotation/Managing-Secret-and-Certificate-Rotation.md)
-
+* Explore [Automating Air-Gapped Script Delivery via HPE iLO Virtual Media](/articles/VirtualMedia/Automating_VirtualMedia.md)
+* Resolve [High Latency & Timeout in Connect-AzAccount](/articles/HighLatency/HighLatency.md)
