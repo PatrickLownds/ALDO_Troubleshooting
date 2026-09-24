@@ -10,6 +10,7 @@ Welcome to the diagnostics and troubleshooting repository for Azure Local Discon
 * [**Certificate Generation Delays in ALDO Build 2605**](./TroubleshootingCertificateGenerationALDOBuild2605.md) — Specific walkthrough for fixing infrastructure certificate generation blocks.
 * [**Managing Secret and Certificate Rotation in Azure Local Disconnected Operations**](./articles/CertificateRotation/Managing-Secret-and-Certificate-Rotation.md) — Comprehensive guide covering lifecycle rotation triggers (post-deployment, scheduled renewals, compliance audits, and emergency compromise) along with operational procedures.
 * [**Automating Air-Gapped Script Delivery via HPE iLO Virtual Media**](./articles/VirtualMedia/Automating_VirtualMedia.md) — Guide and PowerShell automation script for packaging FAT16 `.img` payloads for out-of-band virtual media deployment on Gen11 nodes.
+* [**High Latency & Timeout in Connect-AzAccount**](./articles/HighLatency/HighLatency.md) — Technical breakdown of MSAL public instance discovery timeouts during disconnected authentication and step-by-step guidance for suppressing discovery via `Az.Accounts version 5.3.4`.
 
 ## Automation & Utility Scripts
 
