@@ -17,6 +17,7 @@ During authentication in air-gapped / disconnected Azure Local environments, Con
 
 ## 5\. Proposed Workaround & Mitigations
 
+#### Figure 1: Azure Configuration Settings for Instance Discovery
 - **Parameter Usage:** Validate if passing -DisableInstanceDiscovery directly to Connect-AzAccount bypasses the public endpoint lookup:
 
 ![Get-AzConfig Output](https://raw.githubusercontent.com/PatrickLownds/ALDO_Troubleshooting/main/articles/HighLatency/Get-AzConfig.png)
