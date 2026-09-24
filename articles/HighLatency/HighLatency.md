@@ -26,4 +26,4 @@ During authentication in air-gapped or disconnected Azure Local environments, Co
 Connect-AzAccount -EnvironmentName "Azure.Local" -DisableInstanceDiscovery $true
 ```
 
-**Environment Configuration:** Confirm if setting environment-wide discovery suppression or pre-configuring local authority metadata prevents the timeout loop across all script contexts.
+**Environment Configuration:** Confirm if setting Update-AzConfig -DisableInstanceDiscovery $true globally prevents the timeout across all PowerShell sessions.
