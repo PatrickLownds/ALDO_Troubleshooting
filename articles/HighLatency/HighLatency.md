@@ -7,7 +7,7 @@ During authentication in air-gapped / disconnected Azure Local environments, Con
 ## 2\. Environment & Scope
 
 - **Observed Behaviour:** When running Connect-AzAccount in an isolated environment without public internet access, the authentication request hangs for extended periods due to repeated retries against public Microsoft discovery endpoints.
-- **Root Cause Analysis:** MSAL defaults to querying \[<https://login.microsoftonline.com/common/discovery/instance\>](<https://login.microsoftonline.com/common/discovery/instance>) for tenant/environment metadata validation. In private network configurations, these outbound public HTTP requests timeout before the session falls back to private control plane and ARM endpoints.
+- **Root Cause Analysis:** MSAL defaults to querying (<https://login.microsoftonline.com/common/discovery/instance>) for tenant/environment metadata validation. In private network configurations, these outbound public HTTP requests timeout before the session falls back to private control plane and ARM endpoints.
 - **Log Findings:** Telemetry confirms that private authentication and ARM endpoints are fully reachable and functioning as expected. The latency stems strictly from un-suppressed public instance discovery in Az.Accounts.
 
 ## 4\. Impact
