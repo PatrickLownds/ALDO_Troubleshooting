@@ -19,6 +19,8 @@ During authentication in air-gapped / disconnected Azure Local environments, Con
 
 - **Parameter Usage:** Validate if passing -DisableInstanceDiscovery directly to Connect-AzAccount bypasses the public endpoint lookup:
 
+![Get-AzConfig Ouput](- https://github.com/PatrickLownds/ALDO_Troubleshooting/blob/main/articles/HighLatency/Get-AzConfig.png)
+
 ```powershell
 Connect-AzAccount -EnvironmentName "Azure.Local" -DisableInstanceDiscovery $true
 ```
