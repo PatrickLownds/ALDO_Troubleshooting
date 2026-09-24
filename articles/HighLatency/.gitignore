@@ -1,1 +1,19 @@
+# Ignore the local Jekyll build output folder
+_site/
 
+# Ignore the Jekyll metadata cache
+.jekyll-metadata
+.jekyll-cache/
+
+# Ignore Bundler and Ruby dependencies (if testing locally)
+.bundle/
+vendor/
+Gemfile.lock (optional: keep if you want to lock local versions)
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors
+.vscode/
+.idea/
