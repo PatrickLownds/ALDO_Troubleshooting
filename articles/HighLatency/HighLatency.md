@@ -2,7 +2,7 @@
 
 ## 1\. Issue Summary
 
-During authentication in air-gapped / disconnected Azure Local environments, Connect-AzAccount (via Az.Accounts version 5.3.4 / MSAL) experiences significant execution delays and timeouts. MSAL attempts to connect to the public instance discovery endpoint (<https://login.microsoftonline.com/common/discovery/instance>)) prior to falling back or completing authentication against private local endpoints.
+During authentication in air-gapped or disconnected Azure Local environments, Connect-AzAccount (via Az.Accounts version 5.3.4 / MSAL) experiences significant execution delays and timeouts. MSAL attempts to connect to the public instance discovery endpoint (<https://login.microsoftonline.com/common/discovery/instance>)) prior to falling back or completing authentication against private local endpoints.
 
 ## 2\. Environment & Scope
 
