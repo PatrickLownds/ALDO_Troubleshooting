@@ -4,6 +4,39 @@ When deploying a multi-node cluster (such as Azure Local) on HPE Gen11 (configur
 
 Because this is a dedicated, internal host-to-BMC channel rather than a physical cluster network, this vNIC remains enabled for out-of-band management; however, it is critical to use the Failover Cluster registry settings (Add-ClusterExcludedAdapter) to explicitly exclude the adapter from cluster communications prior to running cluster creation (New-Cluster) or Arc deployment. Failing to exclude it can cause cluster validation failures, improper network binding, or deployment errors across Azure Local. This requirement also impacts other OEMs and their BMC adapters.
 
+```powershell
+# =========================================================================
+# EXCLUDE iLO vNIC / UsbNcm Host Device FROM CLUSTER NETWORKING
+# Must be executed before New-Cluster / Arc Deployment runs
+# =========================================================================
+Write-Host "Configuring Failover Cluster registry exclusion for iLO UsbNcm adapter..." -ForegroundColor Green
+
+# Ensure the ClusSvc Parameters key exists
+New-Item -Path 'HKLM:\System\CurrentControlSet\Services\ClusSvc' -Name 'Parameters' -Force | Out-Null
+
+# Import NetAdapter module safely
+Import-Module NetAdapter -DisableNameChecking
+
+# Query and exclude the iLO vNIC interface description
+$nicDescription = (Get-NetAdapter | Where-Object { 
+    $_.InterfaceDescription -like "*UsbNcm Host Device*" -or 
+    $_.InterfaceDescription -like "*USB-EEM*" 
+}).InterfaceDescription
+
+if ($nicDescription) {
+    Add-ClusterExcludedAdapter -ExclusionType Description -ExclusionValue $nicDescription
+    Write-Host "Successfully excluded adapter: $nicDescription" -ForegroundColor Green
+} else {
+    Write-Warning "UsbNcm Host Device adapter was not detected on this node."
+}
+# =========================================================================
+
+# Verification Step: Confirm Failover Cluster adapter exclusion list
+# Query registry entries under HKLM:\System\CurrentControlSet\Services\ClusSvc\Parameters
+# to verify that network adapters matching 'UsbNcm Host Device' are ignored by cluster networking.
+Get-ClusterExcludedAdapter -ExclusionType Description
+```
+
 However, we have also observed a separate validation issue with the Solution Builder Extension (SBE 2608) when iLO 7 (and potentially iLO 6) in High Security mode is configured with DNS entries that fall outside the internal DNS namespace used during deployment.
 
 By default, if iLO 7 is configured without static DNS or relies on DHCP for DNS assignment, it does not pass those DNS server addresses down to the OS Virtual NIC (UsbNcm Host Device). Conversely, if DNS is manually configured in iLO, those DNS values are inherited directly by the OS Virtual NIC.
