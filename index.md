@@ -145,3 +145,4 @@ pktmon filter remove
 * Read about [Managing Secret and Certificate Rotation in Azure Local Disconnected Operations](/articles/CertificateRotation/Managing-Secret-and-Certificate-Rotation.md)
 * Explore [Automating Air-Gapped Script Delivery via HPE iLO Virtual Media](/articles/VirtualMedia/Automating_VirtualMedia.md)
 * Resolve [High Latency & Timeout in Connect-AzAccount](/articles/HighLatency/HighLatency.md)
+* Review [Addressing iLO vNIC Failover Cluster Exclusion and SBE 2608 DNS Resolution Failures](/articles/SBE/WhenDeployingSBE.md)
