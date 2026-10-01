@@ -2,7 +2,12 @@
 
 When deploying a multi-node cluster (such as Azure Local) on HPE Gen11 (configured in High Security mode) or Gen12 systems, a Virtual NIC (vNIC) is typically enabled by default to facilitate internal host-to-iLO communication. In Windows, this network interface presents itself as a **UsbNcm Host Device**.
 
-Because this is a dedicated, internal host-to-BMC channel rather than a physical cluster network, this vNIC remains enabled for out-of-band management; however, it is critical to use the Failover Cluster registry settings (Add-ClusterExcludedAdapter) to explicitly exclude the adapter from cluster communications prior to running cluster creation (New-Cluster) or Arc deployment. Failing to exclude it can cause cluster validation failures, improper network binding, or deployment errors across Azure Local. This requirement also impacts other OEMs and their BMC adapters.
+Because this is a dedicated, internal host-to-BMC channel rather than a physical cluster network, this vNIC remains enabled for out-of-band management; however, it is critical to use the Failover Cluster registry settings (Add-ClusterExcludedAdapter) to explicitly exclude the adapter from cluster communications before running cluster creation (New-Cluster) or Arc deployment. 
+
+#### Figure 1: Verification of Excluded iLO UsbNcm Host Device Adapter
+![Get-ClusterExcludedAdapter Output](https://raw.githubusercontent.com/PatrickLownds/ALDO_Troubleshooting/main/articles/SBE/vNIC.png)
+
+Failing to exclude it can cause cluster validation failures, improper network binding, or deployment errors across Azure Local. This requirement also impacts other OEMs and their BMC adapters.
 
 ```powershell
 # =========================================================================
