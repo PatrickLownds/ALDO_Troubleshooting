@@ -48,4 +48,7 @@ By default, if iLO 7 is configured without static DNS or relies on DHCP for DNS 
 
 During the SBE validation process, the deployment engine does not discriminate between the DNS entries configured on the UsbNcm Host Device versus the physical compute/management NICs; as a result, validation attempts to query DNS resolution across every active interface, leading to failure.
 
+#### Figure 2: iLO DNS Configuration and OS Virtual NIC Inheritance
+![iLO DNS Resolution Architecture](https://raw.githubusercontent.com/PatrickLownds/ALDO_Troubleshooting/main/articles/SBE/DNS.png)
+
 Because the UsbNcm Host Device (iLO vNIC) inherited in this case unreachable external DNS addresses from the iLO configuration, due to hardcoded static DNS entries, the validation engine attempted to query them during validation tests. Specifically, it tried to resolve the internal Active Directory domain namespace used for the deployment alongside standard external endpoints built into the validation routine (such as microsoft.com), causing the overall validation checks to fail.
