@@ -126,7 +126,7 @@ Once the client certificate (clm_ASZRP-RP_Identity_ClientCert.pfx) is extracted 
 Obtain the script from Microsoft Support.
 ```
 
-**Phase 3: Validation (get-vm)**
+**Phase 3: Validation (Get-VM)**
 
 Verify that the local control plane and virtual machines are running normally following the update sequence. Running get-vm confirms the control plane and appliance VMs report a healthy status.
 
