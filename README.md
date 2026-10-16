@@ -12,6 +12,7 @@ Welcome to the diagnostics and troubleshooting repository for Azure Local Discon
 * [**Automating Air-Gapped Script Delivery via HPE iLO Virtual Media**](./articles/VirtualMedia/Automating_VirtualMedia.md) — Guide and PowerShell automation script for packaging FAT16 `.img` payloads for out-of-band virtual media deployment on Gen11 nodes.
 * [**High Latency & Timeout in Connect-AzAccount**](./articles/HighLatency/HighLatency.md) — Technical breakdown of MSAL public instance discovery timeouts during disconnected authentication and step-by-step guidance for suppressing discovery via `Az.Accounts version 5.3.4`.
 * [**Addressing iLO vNIC Failover Cluster Exclusion and SBE 2608 DNS Resolution Failures**](./articles/SBE/WhenDeployingSBE.md) — Technical guide on excluding HPE iLO UsbNcm vNICs from Failover Cluster networking and resolving SBE 2608 validation failures caused by inherited static DNS configurations.
+* [**Azure Local Deployment Mismatch & Control Plane Desynchronisation**](./articles/ControlPlaneDesynchronisation/Control_Plane_Mismatch.md) — Technical guide on diagnosing and resolving portal/control plane desynchronisation, verifying deployment logs, and executing certificate extraction workflows for Azure Local disconnected environments.
 
 ## Automation & Utility Scripts
 
