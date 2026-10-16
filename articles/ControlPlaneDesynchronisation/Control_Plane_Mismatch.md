@@ -130,7 +130,11 @@ Obtain the script from Microsoft Support.
 
 Verify that the local control plane and virtual machines are running normally following the update sequence. Running get-vm confirms the control plane and appliance VMs report a healthy status.
 
-once validation (get-vm) confirms that the control plane and virtual machines (IRVM01 and control plane components) are running normally with a healthy status, the deployment process moves to finalisation and system integration:
+```
+Get-VM
+```
+
+Once validation (Get-VM) confirms that the control plane and virtual machines (IRVM01 and control plane components) are running normally with a healthy status, the deployment process moves to finalisation and system integration:
 
 - **Completion of Deployment Orchestration:** The local management engine recognises that the resource status has been successfully updated (DeploymentSuccess and reported properties set to Success), allowing the orchestrator to mark the entire deployment workflow as completed.
 - **Arc Integration & Management:** With the control plane fully operational and registered, the local Azure Arc agents and resource providers resume normal operations, enabling management of the cluster either locally or via connected tooling.
