@@ -8,6 +8,9 @@ Under Essentials, the **Azure Local connection** status reflects:
 
 _"Deployment failed—Connected an hour ago"_
 
+#### Figure 1: Control Plane Desynchronisation
+![Control Plane Desynchronisation](https://raw.githubusercontent.com/PatrickLownds/ALDO_Troubleshooting/main/articles/ControlPlaneDesynchronisation/ControlPlane.png)
+
 **Impact:** Although the underlying cluster and hardware pass validation, the control plane state in the portal reflects a deployment failure. This is a known cosmetic/synchronisation disconnect between the local lifecycle manager / control plane and the cloud relay.
 
 **Root Cause Analysis**
