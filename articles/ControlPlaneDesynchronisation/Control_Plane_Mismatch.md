@@ -47,7 +47,7 @@ Get-ChildItem -Path "C:\CloudDeployment\Logs" -Filter "CloudDeployment*.log" |
 
 Look for completion signatures or specific orchestration step failures to rule out a genuine local engine halt.
 
-**Phase 3: Deployment and LCM Logs**
+**Phase 3: Deployment and LCM Log Collection**
 
 Microsoft requested all deployment and LCM logs for troubleshooting without date restrictions into a single, clean ZIP archive on the seed node, run the following PowerShell script directly on the host.
 
