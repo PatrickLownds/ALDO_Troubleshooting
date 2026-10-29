@@ -13,7 +13,7 @@ Welcome to the diagnostics and troubleshooting repository for Azure Local Discon
 * [**High Latency & Timeout in Connect-AzAccount**](./articles/HighLatency/HighLatency.md) — Technical breakdown of MSAL public instance discovery timeouts during disconnected authentication and step-by-step guidance for suppressing discovery via `Az.Accounts version 5.3.4`.
 * [**Addressing iLO vNIC Failover Cluster Exclusion and SBE 2608 DNS Resolution Failures**](./articles/SBE/WhenDeployingSBE.md) — Technical guide on excluding HPE iLO UsbNcm vNICs from Failover Cluster networking and resolving SBE 2608 validation failures caused by inherited static DNS configurations.
 * [**Azure Local Deployment Mismatch & Control Plane Desynchronisation**](./articles/ControlPlaneDesynchronisation/Control_Plane_Mismatch.md) — Technical guide on diagnosing and resolving portal/control plane desynchronisation, verifying deployment logs, and executing certificate extraction workflows for Azure Local disconnected environments.
-* [**Automating Arc SDN & NSG Provisioning on Azure Local Disconnected Operations**](./articles/sdn/RunningSDNArcOnALDO.md) — Technical guide on deploying host-level SDN Network Controllers, provisioning Arc VM logical networks, and executing dual-control plane NSG security automation in air-gapped environments.
+* [**Automating Arc SDN & NSG Provisioning on Azure Local Disconnected Operations**](./articles/SDN/RunningSDNArcOnALDO.md) — Technical guide on deploying host-level SDN Network Controllers, provisioning Arc VM logical networks, and executing dual-control plane NSG security automation in air-gapped environments.
 
 ## Automation & Utility Scripts
 
