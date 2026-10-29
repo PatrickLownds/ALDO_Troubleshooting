@@ -147,3 +147,4 @@ pktmon filter remove
 * Resolve [High Latency & Timeout in Connect-AzAccount](/articles/HighLatency/HighLatency.md)
 * Review [Addressing iLO vNIC Failover Cluster Exclusion and SBE 2608 DNS Resolution Failures](/articles/SBE/WhenDeployingSBE.md)
 * Resolve [Azure Local Deployment Mismatch & Control Plane Desynchronisation](./articles/ControlPlaneDesynchronisation/Control_Plane_Mismatch.md)
+* Implement [Automating Arc SDN & NSG Provisioning on Azure Local Disconnected Operations](./articles/SDN/RunningSDNArcOnALDO.md) 
