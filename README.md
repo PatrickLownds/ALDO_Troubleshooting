@@ -14,7 +14,7 @@ Welcome to the diagnostics and troubleshooting repository for Azure Local Discon
 * [**Addressing iLO vNIC Failover Cluster Exclusion and SBE 2608 DNS Resolution Failures**](./articles/SBE/WhenDeployingSBE.md) — Technical guide on excluding HPE iLO UsbNcm vNICs from Failover Cluster networking and resolving SBE 2608 validation failures caused by inherited static DNS configurations.
 * [**Azure Local Deployment Mismatch & Control Plane Desynchronisation**](./articles/ControlPlaneDesynchronisation/Control_Plane_Mismatch.md) — Technical guide on diagnosing and resolving portal/control plane desynchronisation, verifying deployment logs, and executing certificate extraction workflows for Azure Local disconnected environments.
 * [**Automating Arc SDN & NSG Provisioning on Azure Local Disconnected Operations**](./articles/SDN/RunningSDNArcOnALDO.md) — Technical guide on deploying host-level SDN Network Controllers, provisioning Arc VM logical networks, and executing dual-control plane NSG security automation in air-gapped environments.
-* [**Blueprint for Lifecycle Management in Air-Gapped Environments**](./articles/SDN/LifecycleManagementinAirGappedEnvironments.md) - Technical guide on coordinating multi-tier update cadences, validating offline software integrity, and managing isolated release packages across air-gapped management, host fabric, and tenant workload planes.
+* [**Blueprint for Lifecycle Management in Air-Gapped Environments**](./articles/Update/LifecycleManagementinAirGappedEnvironments.md) - Technical guide on coordinating multi-tier update cadences, validating offline software integrity, and managing isolated release packages across air-gapped management, host fabric, and tenant workload planes.
 
 ## Automation & Utility Scripts
 
