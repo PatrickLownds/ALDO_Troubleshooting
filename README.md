@@ -15,6 +15,7 @@ Welcome to the diagnostics and troubleshooting repository for Azure Local Discon
 * [**Azure Local Deployment Mismatch & Control Plane Desynchronisation**](./articles/ControlPlaneDesynchronisation/Control_Plane_Mismatch.md) — Technical guide on diagnosing and resolving portal/control plane desynchronisation, verifying deployment logs, and executing certificate extraction workflows for Azure Local disconnected environments.
 * [**Automating Arc SDN & NSG Provisioning on Azure Local Disconnected Operations**](./articles/SDN/RunningSDNArcOnALDO.md) — Technical guide on deploying host-level SDN Network Controllers, provisioning Arc VM logical networks, and executing dual-control plane NSG security automation in air-gapped environments.
 * [**Blueprint for Lifecycle Management in Air-Gapped Environments**](./articles/Update/LifecycleManagementinAirGappedEnvironments.md) - Technical guide on coordinating multi-tier update cadences, validating offline software integrity, and managing isolated release packages across air-gapped management, host fabric, and tenant workload planes.
+* [**Architecting an Azure Local Disconnected Operations Proof of Concept**](./articles/PoC/ArchitectingAnALDOPoC.md) - Architectural framework for evaluating disconnected cloud capabilities, configuring low-footprint proof-of-concept topologies, and bypassing multi-node control plane constraints via custom URI parameters.
 
 ## Automation & Utility Scripts
 
