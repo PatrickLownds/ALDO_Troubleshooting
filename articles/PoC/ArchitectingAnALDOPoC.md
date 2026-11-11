@@ -59,7 +59,7 @@ To bypass this check during a single-node management POC, a specific feature fla
 https://portal.autonomous.cloud.private/?isManagementClusterAllowedToBeLessThan3Nodes=true
 ```
 
-**Note:** In web and system architecture, a URL (Uniform Resource Locator) specifies _where_ a resource is located (\[<https://portal.autonomous.cloud.private/>), whereas appending the query parameter (?isManagementClusterAllowedToBeLessThan3Nodes=true) turns the address into a complete **URI** (Uniform Resource Identifier), identifying the specific request state and feature override being passed to the endpoint.
+**Note:** In web and system architecture, a URL (Uniform Resource Locator) specifies *where* a resource is located (`https://portal.autonomous.cloud.private/`), whereas appending the query parameter **`?isManagementClusterAllowedToBeLessThan3Nodes=true`** turns the address into a complete **URI** (Uniform Resource Identifier), identifying the specific request state and feature override being passed to the endpoint.
 
 ## Executing the Override
 
