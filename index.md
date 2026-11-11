@@ -149,3 +149,4 @@ pktmon filter remove
 * Resolve [Azure Local Deployment Mismatch & Control Plane Desynchronisation](./articles/ControlPlaneDesynchronisation/Control_Plane_Mismatch.md)
 * Implement [Automating Arc SDN & NSG Provisioning on Azure Local Disconnected Operations](./articles/SDN/RunningSDNArcOnALDO.md)
 * Update [Blueprint for Lifecycle Management in Air-Gapped Environments](./articles/Update/LifecycleManagementinAirGappedEnvironments.md)
+* Guide [Architecting an Azure Local Disconnected Operations Proof of Concept](./articles/PoC/ArchitectingAnALDOPoC.md)
