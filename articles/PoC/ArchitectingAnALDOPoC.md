@@ -68,6 +68,9 @@ https://portal.autonomous.cloud.private/?isManagementClusterAllowedToBeLessThan3
 3. The platform will process the query string, override the 3-node minimum requirement, and allow the cluster creation workflow to proceed.
 4. **Expected Warning:** The wizard will display a formal confirmation banner warning that deploying the disconnected control plane on fewer than three nodes is non-compliant with production SLA standards and should remain confined to staging and testing environments.
 
+![Portal Error](https://raw.githubusercontent.com/PatrickLownds/ALDO_Troubleshooting/main/articles/PoC/POC02.jpg)
+*Figure 2: ALDO Control Plane Portal*
+
 Acknowledging this banner unlocks full cluster creation functionality, allowing the single control plane host (IRVM01) to begin managing and orchestrating the multi-node workload cluster.
 
 ## Conclusion
