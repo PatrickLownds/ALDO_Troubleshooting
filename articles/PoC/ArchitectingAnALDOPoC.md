@@ -48,6 +48,9 @@ https://portal.autonomous.cloud.private/
 
 Because production deployments strictly require a 3-node management cluster for quorum and resiliency, attempting to form or register the cluster through the standard web endpoint URL will result in a **hard validation block**. The deployment engine expects a multi-node control plane by default.
 
+![Portal Error](https://raw.githubusercontent.com/PatrickLownds/ALDO_Troubleshooting/main/articles/PoC/POC01.jpg)
+*Figure 1: ALDO Control Plane Portal*
+
 ### The Workaround: Passing the Feature Flag Query String
 
 To bypass this check during a single-node management POC, a specific feature flag must be appended directly to the URI in the browser address bar (or API call):
