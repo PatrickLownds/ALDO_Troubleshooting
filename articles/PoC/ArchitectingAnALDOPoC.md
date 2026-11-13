@@ -30,9 +30,9 @@ Option 2 maximises validation value by providing a production-equivalent **3-Nod
 
 When operating the disconnected control plane on a single host (IRVM01), hardware requirements remain strict to support the containerised and virtualised management microservices:
 
-- **Memory:** 256 GB
+- **Memory:** 128 GB - Standard Configuration
 - **Processor:** 24 Cores
-- **Storage:** 4 TB dedicated NVMe/SSD storage pool + 960 GB boot drive
+- **Storage:** 6 drives, min 2 TB each SSD/NVMe storage pool + 960 GB boot drive
 
 ### Overcoming the Single-Node Management Cluster Barrier
 
