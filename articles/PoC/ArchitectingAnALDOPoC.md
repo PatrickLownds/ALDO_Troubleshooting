@@ -34,6 +34,11 @@ When operating the disconnected control plane on a single host (IRVM01), hardwar
 - **Processor:** 24 Cores
 - **Storage:** 6 drives, min 2 TB each SSD/NVMe storage pool + 960 GB boot drive
 
+While documented minimum specifications do say 6 drives (min. 2 TB each SSD/NVMe) plus a 960 GB boot drive—and systems with boot disks smaller than 960 GB must consume extra data/capacity drives to host the appliance—there is a hard block on fewer than four capacity drives. Make sure you size and verify capacity drive counts early so your POC doesn't stall on storage eligibility after bypassing the node-count check.
+
+![Portal Error](https://raw.githubusercontent.com/PatrickLownds/ALDO_Troubleshooting/main/articles/PoC/POC03.jpg)
+*Figure 1: ALDO Deployment Error*
+
 ### Overcoming the Single-Node Management Cluster Barrier
 
 When deploying Option 2, an intentional safety boundary in the platform's deployment logic must be navigated.
@@ -49,7 +54,7 @@ https://portal.autonomous.cloud.private/
 Because production deployments strictly require a 3-node management cluster for quorum and resiliency, attempting to form or register the cluster through the standard web endpoint URL will result in a **hard validation block**. The deployment engine expects a multi-node control plane by default.
 
 ![Portal Error](https://raw.githubusercontent.com/PatrickLownds/ALDO_Troubleshooting/main/articles/PoC/POC01.jpg)
-*Figure 1: ALDO Control Plane Portal*
+*Figure 2: ALDO Control Plane Portal*
 
 ### The Workaround: Passing the Feature Flag Query String
 
@@ -69,7 +74,7 @@ https://portal.autonomous.cloud.private/?isManagementClusterAllowedToBeLessThan3
 4. **Expected Warning:** The wizard will display a formal confirmation banner warning that deploying the disconnected control plane on fewer than three nodes is non-compliant with production SLA standards and should remain confined to staging and testing environments.
 
 ![Portal Error](https://raw.githubusercontent.com/PatrickLownds/ALDO_Troubleshooting/main/articles/PoC/POC02.jpg)
-*Figure 2: ALDO Control Plane Portal*
+*Figure 3: ALDO Control Plane Portal*
 
 Acknowledging this banner unlocks full cluster creation functionality, allowing the single control plane host (IRVM01) to begin managing and orchestrating the multi-node workload cluster.
 
