@@ -36,7 +36,7 @@ When operating the disconnected control plane on a single host (IRVM01), hardwar
 
 While documented minimum specifications do say 6 drives (min. 2 TB each SSD/NVMe) plus a 960 GB boot drive—and systems with boot disks smaller than 960 GB must consume extra data/capacity drives to host the appliance—there is a hard block on fewer than four capacity drives. Make sure you size and verify capacity drive counts early so your POC doesn't stall on storage eligibility after bypassing the node-count check.
 
-![Portal Error](https://raw.githubusercontent.com/PatrickLownds/ALDO_Troubleshooting/main/articles/PoC/POC03.jpg)
+![Portal Error](https://raw.githubusercontent.com/PatrickLownds/ALDO_Troubleshooting/main/articles/PoC/POC3.jpg)
 *Figure 1: ALDO Deployment Error*
 
 ### Overcoming the Single-Node Management Cluster Barrier
